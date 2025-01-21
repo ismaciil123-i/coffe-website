@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somalia Coffee Shops</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Link css -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #443d3d;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* Registration Form */
+#registrationForm {
+    width: 90%;
+    max-width: 500px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#registrationForm h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+#registrationForm label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: bold;
+}
+
+#registrationForm input,
+#registrationForm textarea,
+#registrationForm select {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #f9f9f9;
+}
+
+#registrationForm input:focus,
+#registrationForm textarea:focus,
+#registrationForm select:focus {
+    border-color: #2c3e50;
+    outline: none;
+    background: #b8b6b6;
+}
+
+#registrationForm textarea {
+    height: 100px;
+    resize: none;
+}
+
+#registrationForm button {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    background: #2c3e50;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#registrationForm button:hover {
+    background: #f39c12;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header .navbar {
+        display: none;
+    }
+
+    .header .icons .fas.fa-bars {
+        display: block;
+    }
+
+    #registrationForm {
+        width: 95%;
+    }
+
+    .footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+
+    <header class="header">
+        <a href="home pge.html" class="logo">
+            <img src="../images/loogada saxda ah.png" class="logo1">
+        </a>
+        <nav class="navbar">
+            <a href="home pge.html">HOME</a>
+            <a href="#menu">COFFEE SHOPS</a>
+            <a href="Form.html">CONTACT US</a>
+            <a href="Help.html">Help</a>
+            <a href="About.html">ABOUT</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+
+        <div class="cart-items-container">
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="../images/Nin Kop.jpg" alt="Coffee 1">
+                <div class="content">
+                    <h3>Somali Coffee-1</h3>
+                    <div class="price">$76.00/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="../images/nin iyo.avif" alt="Coffee 2">
+                <div class="content">
+                    <h3>Somali Coffee-2</h3>
+                    <div class="price">$10.00/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="../images/Oday kop.avif" alt="Coffee 3">
+                <div class="content">
+                    <h3>Somali Coffee-3</h3>
+                    <div class="price">$96.00/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="../images/Man Kop.avif" alt="Coffee 4">
+                <div class="content">
+                    <h3>Somali Coffee-4</h3>
+                    <div class="price">$80.00/-</div>
+                </div>
+            </div>
+            <a href="#" class="btn">Check Out</a>
+        </div>
+
+    </header><br><br><br><br><br><br>
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration Form</title>
+        <style>
+            .error {
+                color: red;
+                font-size: 0.9em;
+            }
+        </style>
+    </head>
+    <body>
+        <form id="registrationForm" enctype="multipart/form-data" novalidate>
+            <h2>Registration Form</h2>
+    
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+            <div id="emailError" class="error"></div>
+            <br><br>
+    
+            <!-- Password -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password">
+            <div id="passwordError" class="error"></div>
+            <br><br>
+    
+            <!-- Number -->
+            <label for="number">Phone Number:</label>
+            <input type="tel" id="number" name="number" placeholder="Enter your phone number">
+            <div id="numberError" class="error"></div>
+            <br><br>
+    
+            <!-- Message -->
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Write your message"></textarea>
+            <div id="messageError" class="error"></div>
+            <br><br>
+    
+            <!-- File Upload -->
+            <label for="file">Upload File:</label>
+            <input type="file" id="file" name="file" accept=".jpg,.png,.pdf">
+            <div id="fileError" class="error"></div>
+            <br><br>
+    
+            <!-- Gender -->
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            <div id="genderError" class="error"></div>
+            <br><br>
+    
+            <!-- Marital Status -->
+            <label>Marital Status:</label>
+            <select id="maritalStatus" name="maritalStatus">
+                <option value="">Select...</option>
+                <option value="Single">Single</option>
+                <option value="Married">Married</option>
+            </select>
+            <div id="maritalStatusError" class="error"></div>
+            <br><br>
+    
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    
+        <script>
+            document.getElementById('registrationForm').addEventListener('submit', function (event) {
+                event.preventDefault(); // Prevent form submission
+    
+                let isValid = true;
+    
+                // Clear all error messages
+                document.querySelectorAll('.error').forEach(el => el.textContent = '');
+    
+                // Validate Email
+                const email = document.getElementById('email').value.trim();
+                if (!email) {
+                    document.getElementById('emailError').textContent = 'Email is required.';
+                    isValid = false;
+                } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                    document.getElementById('emailError').textContent = 'Invalid email format.';
+                    isValid = false;
+                }
+    
+                // Validate Password
+                const password = document.getElementById('password').value.trim();
+                if (!password) {
+                    document.getElementById('passwordError').textContent = 'Password is required.';
+                    isValid = false;
+                }
+    
+                // Validate Phone Number
+                const number = document.getElementById('number').value.trim();
+                if (!number) {
+                    document.getElementById('numberError').textContent = 'Phone number is required.';
+                    isValid = false;
+                }
+    
+                // Validate Message
+                const message = document.getElementById('message').value.trim();
+                if (!message) {
+                    document.getElementById('messageError').textContent = 'Message is required.';
+                    isValid = false;
+                }
+    
+                // Validate File
+                const file = document.getElementById('file').files[0];
+                if (!file) {
+                    document.getElementById('fileError').textContent = 'File is required.';
+                    isValid = false;
+                }
+    
+                // Validate Gender
+                const gender = document.querySelector('input[name="gender"]:checked');
+                if (!gender) {
+                    document.getElementById('genderError').textContent = 'Gender is required.';
+                    isValid = false;
+                }
+    
+                // Validate Marital Status
+                const maritalStatus = document.getElementById('maritalStatus').value;
+                if (!maritalStatus) {
+                    document.getElementById('maritalStatusError').textContent = 'Marital status is required.';
+                    isValid = false;
+                }
+    
+                // If all validations pass, submit the form
+                if (isValid) {
+                    alert('Form submitted successfully!');
+                    // You can replace this alert with an actual form submission logic.
+                }
+            });
+        </script>
+    </body>
+    </html>
+    
+
+
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <div class="container">
+            <!-- About Section -->
+            <div class="footer-about">
+                <h3>Coffee Bliss</h3>
+                <p>Discover the finest coffee blends and enjoy a unique experience at Coffee Bliss. Your perfect cup is
+                    just a sip away!</p>
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media Section -->
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin-in"></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 Coffee Bliss. All Rights Reserved. Designed with ❤️ by Coffee Enthusiasts.</p>
+        </div>
+    </footer>
+
+
+    <!-- Link js -->
+    <script src="../java/main.js"></script>
+
+</body>
+
+</html>

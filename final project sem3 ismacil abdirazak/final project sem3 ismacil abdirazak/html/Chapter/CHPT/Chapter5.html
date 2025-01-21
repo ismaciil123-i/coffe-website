@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../../css/style.css">
+  <!--below is the link of box icon-->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+
+  <header class="header">
+    <a href="../../home pge.html" class="logo">
+      <img src="../../../images/loogada saxda ah.png" class="logo1">
+  </a>
+  <nav class="navbar">
+    <a href="../../home pge.html">HOME</a>
+    <a href="#m">COFFEE SHOPS</a>
+    <a href="../../Form.html">CONTACT US</a>
+    <a href="../../Help.html">HELP</a>
+    <a href="../../About.html">ABOUT</a>
+</nav>
+
+    <div class="icons">
+      <div class="fas fa-search" id="search-btn"></div>
+      <div class="fas fa-shopping-cart" id="cart-btn"></div>
+      <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+    <div class="search-form">
+      <input type="search" id="search-box" placeholder="search here...">
+      <label for="search-box" class="fas fa-search"></label>
+    </div>
+
+    <div class="cart-items-container">
+      <div class="cart-item">
+        <span class="fas fa-times"></span>
+        <img src="../images/Nin Kop.jpg" alt="Coffee 1">
+        <div class="content">
+          <h3>Somali Coffee-1</h3>
+          <div class="price">$76.00/-</div>
+        </div>
+      </div>
+      <div class="cart-item">
+        <span class="fas fa-times"></span>
+        <img src="../images/nin iyo.avif" alt="Coffee 2">
+        <div class="content">
+          <h3>Somali Coffee-2</h3>
+          <div class="price">$10.00/-</div>
+        </div>
+      </div>
+      <div class="cart-item">
+        <span class="fas fa-times"></span>
+        <img src="../images/Oday kop.avif" alt="Coffee 3">
+        <div class="content">
+          <h3>Somali Coffee-3</h3>
+          <div class="price">$96.00/-</div>
+        </div>
+      </div>
+      <div class="cart-item">
+        <span class="fas fa-times"></span>
+        <img src="../images/Man Kop.avif" alt="Coffee 4">
+        <div class="content">
+          <h3>Somali Coffee-4</h3>
+          <div class="price">$80.00/-</div>
+        </div>
+      </div>
+      <a href="#" class="btn">Check Out</a>
+    </div>
+
+  </header><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+  <div class="navbar-li">
+    <ul>
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="Chapter1.html">Chapter 1</a></li>
+      <li><a href="Chapter2.html">Chapter 2</a></li>
+      <li><a href="Chapter3.html">Chapter 3</a></li>
+      <li><a href="Chapter4.html">Chapter 4</a></li>
+      <li><a href="Chapter5.html">Chapter 5</a></li>
+      <li><a href="Chapter6.html">Chapter 6</a></li>
+      <li><a href="Chapter7.html">Chapter 7</a></li>
+      <li><a href="Chapter8.html">Chapter 8</a></li>
+    </ul>
+  </div>
+
+  <style>
+    /* General Reset */
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar-li {
+      text-align: center;
+      background-color: #2c3e50;
+      padding: 1rem 0;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-li ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .navbar-li ul li {
+      display: inline-block;
+    }
+
+    .navbar-li ul li a {
+      display: inline-block;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      background-color: #34495e;
+      color: #fff;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: all 0.3s ease-in-out;
+      font-size: 1rem;
+    }
+
+    .navbar-li ul li a:hover {
+      background-color: #f39c12;
+      color: #2c3e50;
+      transform: translateY(-3px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .navbar-li ul {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .navbar-li ul li a {
+        width: 80%;
+        text-align: center;
+      }
+    }
+
+
+    .cha_5,
+    #cha_05,
+    #ch_4 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    button {
+      background-color: #f709bf;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      margin: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #a6f704;
+    }
+
+    #ch05,
+    #Output {
+      text-align: center;
+      margin: 20px auto;
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+      padding: 10px;
+      width: 80%;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    main {
+      padding: 200px;
+      text-align: center;
+    }
+  </style>
+
+
+  <main>
+    <div class="cha_5">
+      <p id="ch05">Output</p>
+      <button onclick="chap5_1()">Array Literal:</button>
+      <button onclick="chap5_2()">Array Constructor:</button>
+      <button onclick="chap5_3()">Empty Array:</button>
+      <button onclick="chap5_4()">Array.from:</button>
+      <button onclick="chap5_5()">Spread Operator:</button>
+      <button onclick="chap5_6()">Array.of:</button>
+      <button onclick="chap5_7()">Access Array</button>
+      <button onclick="chap5_8()">First Element</button>
+    </div>
+
+    <div id="cha_05">
+      <p id="Output">Output</p>
+      <button onclick="chap5_9()">Push Method</button>
+      <button onclick="chap5_10()">Unshift Method</button>
+      <button onclick="chap5_11()">Updating Elements</button>
+      <button onclick="chap5_12()">Pop Method</button>
+      <button onclick="chap5_13()">Shift Method</button>
+      <button onclick="chap5_14()">Splice Method</button>
+      <button onclick="chap5_15()">For Loop</button>
+      <button onclick="chap5_16()">forEach Method</button>
+      <button onclick="chap5_17()">for...of Loop</button>
+      <button onclick="chap5_18()">Map Method</button>
+    </div>
+  </main>
+  <script>
+
+    const fruits = ["apple", "banana", "mango"];
+    const numbers = [1, 2, 3];
+
+    function chap5_1() {
+      const names = ["Mohamet", "Ali"];
+      document.getElementById("ch05").innerHTML = names.join(", ");
+    }
+
+    function chap5_2() {
+      const names = new Array("Mohamet", "Ali");
+      document.getElementById("ch05").innerHTML = names.join(", ");
+    }
+
+    function chap5_3() {
+      const myArray = [];
+      myArray[0] = "first";
+      myArray[1] = "second";
+      document.getElementById("ch05").innerHTML = myArray.join(", ");
+    }
+
+    function chap5_4() {
+      const arrayFromStr = Array.from("Hello");
+      document.getElementById("ch05").innerHTML = arrayFromStr.join(", ");
+    }
+
+    function chap5_5() {
+      const sourceArray = [1, 2, 3];
+      const newArray = [...sourceArray];
+      document.getElementById("ch05").innerHTML = newArray.join(", ");
+    }
+
+    function chap5_6() {
+      const myArray = Array.of(1, 2, 3);
+      document.getElementById("ch05").innerHTML = myArray.join(", ");
+    }
+
+    function chap5_7() {
+      document.getElementById("ch05").innerHTML = fruits.join(", ");
+    }
+
+    function chap5_8() {
+      document.getElementById("ch05").innerHTML = fruits[0];
+    }
+
+    // Array Methods
+    function chap5_9() {
+      const localFruits = [...fruits];
+      localFruits.push("mango");
+      document.getElementById("Output").innerHTML = localFruits.join(", ");
+    }
+
+    function chap5_10() {
+      const localFruits = [...fruits];
+      localFruits.unshift("Apple");
+      document.getElementById("Output").innerHTML = localFruits.join(", ");
+    }
+
+    function chap5_11() {
+      const localFruits = [...fruits];
+      localFruits[1] = "mango";
+      document.getElementById("Output").innerHTML = localFruits.join(", ");
+    }
+
+    function chap5_12() {
+      const localFruits = [...fruits];
+      localFruits.pop();
+      document.getElementById("Output").innerHTML = localFruits.join(", ");
+    }
+
+    function chap5_13() {
+      const localFruits = [...fruits];
+      localFruits.shift();
+      document.getElementById("Output").innerHTML = localFruits.join(", ");
+    }
+
+    function chap5_14() {
+      const localFruits = [...fruits];
+      localFruits.splice(1, 2);
+      document.getElementById("Output").innerHTML = "Updated Fruits: " + localFruits.join(", ");
+    }
+
+    function chap5_15() {
+      let result = "Fruits using For Loop:<br>";
+      for (let i = 0; i < fruits.length; i++) {
+        result += fruits[i] + "<br>";
+      }
+      document.getElementById("Output").innerHTML = result;
+    }
+
+    function chap5_16() {
+      let result = "Fruits using forEach Method:<br>";
+      fruits.forEach(function (fruit) {
+        result += fruit + "<br>";
+      });
+      document.getElementById("Output").innerHTML = result;
+    }
+
+    function chap5_17() {
+      let result = "Fruits using for...of Loop:<br>";
+      for (const fruit of fruits) {
+        result += fruit + "<br>";
+      }
+      document.getElementById("Output").innerHTML = result;
+    }
+
+    function chap5_18() {
+      const squaredNumbers = numbers.map((num) => num * num);
+      document.getElementById("Output").innerHTML =
+        "Squared Numbers: " + squaredNumbers.join(", ");
+    }
+  </script>
+
+  <!-- Footer -->
+
+  <br><br><br><br><br><br>
+  <footer class="footer">
+    <div class="container">
+      <!-- About Section -->
+      <div class="footer-about">
+        <h3>Coffee Bliss</h3>
+        <p>Discover the finest coffee blends and enjoy a unique experience at Coffee Bliss. Your perfect cup is
+          just a sip away!</p>
+      </div>
+
+      <!-- Quick Links Section -->
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Media Section -->
+      <div class="footer-social">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-instagram"></a>
+          <a href="#" class="fab fa-linkedin-in"></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright Section -->
+    <div class="footer-bottom">
+      <p>&copy; 2025 Coffee Bliss. All Rights Reserved. Designed with ❤️ by Coffee Enthusiasts.</p>
+    </div>
+  </footer>
+
+  <script src="../../../java/main.js"></script>
+
+</body>
+
+</html>

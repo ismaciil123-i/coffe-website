@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10001;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background-color: rgb(31, 31, 29);
+}
+
+header h1 {
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+header h1 span {
+    color: #f908cd;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin: 0 25px;
+    padding: 5px 0;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+    border-bottom: 2px solid #eb0dd5;
+}
+
+.navbar li {
+    position: relative;
+}
+
+#submaenu {
+    opacity: 0;
+    position: absolute;
+    top: 35px;
+    visibility: hidden;
+    z-index: 1;
+    background-color: #f905d5;
+    border-radius: 8px;
+    width: 180px;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.navbar li:hover #submaenu {
+    opacity: 1;
+    visibility: visible;
+}
+
+#submaenu a {
+    color: white;
+    padding: 10px;
+    background-color: #f905d5;
+    text-align: center;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+#submaenu a:hover {
+    background-color: #8208ec;
+}
+
+.nav-btn .brn-first a {
+    color: white;
+    font-size: 17px;
+    padding: 10px 25px;
+    border: 2px solid #f107e2;
+    background-color: #f908cd;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.nav-btn .brn-first a:hover {
+    background-color: transparent;
+    color: #f2072e;
+}
+
+section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-img img {
+    max-width: 100%;
+    width: 750px;
+    height: auto;
+}
+
+#ch_4 button {
+    background-color: #f709bf;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#ch_4 button:hover {
+    background-color: #a6f704;
+}
+
+#footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+#footer footer {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar a {
+        margin: 10px 0;
+    }
+
+    .nav-btn {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    #menu-icon {
+        display: block;
+        font-size: 35px;
+        color: #0adde8;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+}
+.cha_5, #cha_05 ,#ch_4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #f709bf;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #a6f704;
+}
+
+#ch05, #Output {
+    text-align: center;
+    margin: 20px auto;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main{
+    padding: 200px;
+    text-align: center;
+}

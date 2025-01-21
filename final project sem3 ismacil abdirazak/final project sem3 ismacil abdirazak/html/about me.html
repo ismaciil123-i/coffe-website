@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somalia Coffee Shops</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="home pge.html" class="logo">
+            <img src="../images/loogada saxda ah.png" alt="Logo" class="logo1">
+        </a>
+        <nav class="navbar">
+            <a href="home pge.html">HOME</a>
+            <a href="#menu">COFFEE SHOPS</a>
+            <a href="Form.html">CONTACT US</a>
+            <a href="Help.html">HELP</a>
+            <a href="About.html">ABOUT</a>
+        </nav>
+        
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="Search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+    </header>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        #aboutMe {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+
+        h1, h2 {
+            margin: 10px 0;
+        }
+
+        p {
+            color: #555;
+        }
+
+        .input-field {
+            margin: 10px;
+            padding: 8px;
+            width: 80%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .btn {
+            padding: 10px 15px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+
+    <div id="aboutMe"></div>
+
+    <script>
+        // Object containing About Me data
+        let aboutMeData = {
+            id: "12345",
+            name: "Mohamed Ali",
+            university: "Somali National University",
+            address: "Mogadishu, Somalia",
+            profilePicture: "https://via.placeholder.com/150", // Placeholder image URL
+            bio: "I am a Computer Science graduate passionate about programming, databases, and technology."
+        };
+
+        // Function to render About Me content
+        function renderAboutMe(data) {
+            const container = document.getElementById('aboutMe');
+
+            container.innerHTML = `
+                <img id="profile-img" src="${data.profilePicture}" alt="Profile Picture">
+                <h1>${data.name}</h1>
+                <h2>ID: <span id="id">${data.id}</span></h2>
+                <h3>University: <span id="university">${data.university}</span></h3>
+                <p>Address: ${data.address}</p>
+                <p>${data.bio}</p>
+
+                <!-- Edit Section -->
+                <input type="text" id="new-id" class="input-field" placeholder="Enter new ID" value="${data.id}">
+                <input type="text" id="new-university" class="input-field" placeholder="Enter new University" value="${data.university}">
+                <input type="text" id="new-name" class="input-field" placeholder="Enter new Name" value="${data.name}">
+
+                <!-- Upload New Image -->
+                <input type="file" id="profile-img-upload" class="input-field" accept="image/*">
+                <button class="btn" onclick="updateInfo()">Update Info</button>
+            `;
+        }
+
+        // Function to update ID, University, Name, and Profile Picture
+        function updateInfo() {
+            const newId = document.getElementById('new-id').value;
+            const newUniversity = document.getElementById('new-university').value;
+            const newName = document.getElementById('new-name').value;
+            const newImage = document.getElementById('profile-img-upload').files[0];
+
+            // Update the About Me data
+            aboutMeData.id = newId;
+            aboutMeData.university = newUniversity;
+            aboutMeData.name = newName;
+
+            // If a new image is uploaded, update the profile picture
+            if (newImage) {
+                const reader = new FileReader();
+                reader.onloadend = function () {
+                    aboutMeData.profilePicture = reader.result;
+                    document.getElementById('profile-img').src = reader.result;
+                };
+                reader.readAsDataURL(newImage);
+            }
+
+            // Re-render the About Me section with updated info
+            renderAboutMe(aboutMeData);
+        }
+
+        // Call the function with the data
+        renderAboutMe(aboutMeData);
+    </script>
+
+    <!-- Quick Links Section -->
+    <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Social Media Section -->
+    <div class="footer-social">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin-in"></a>
+        </div>
+    </div>
+
+    <!-- Copyright Section -->
+    <div class="footer-bottom">
+        <p>&copy; 2025 Coffee Bliss. All Rights Reserved. Designed with ❤️ by Coffee Enthusiasts.</p>
+    </div>
+
+    <!-- Link to external JavaScript -->
+    <script src="../java/main.js"></script>
+</body>
+
+</html>

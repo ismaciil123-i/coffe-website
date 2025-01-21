@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        #aboutMe {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+
+        h1, h2 {
+            margin: 10px 0;
+        }
+
+        p {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div id="aboutMe"></div>
+
+    <!-- Review Section -->
+<div class="review-section">
+    <h2>Customer Reviews</h2>
+
+    <!-- Form for adding a review -->
+    <form id="review-form">
+        <label for="review-text">Write your review:</label><br>
+        <textarea id="review-text" name="review-text" rows="4" cols="50" placeholder="Share your experience..."></textarea><br>
+        
+        <label for="rating">Rate us (1-5):</label>
+        <select id="rating" name="rating">
+            <option value="1">1 Star</option>
+            <option value="2">2 Stars</option>
+            <option value="3">3 Stars</option>
+            <option value="4">4 Stars</option>
+            <option value="5">5 Stars</option>
+        </select><br>
+
+        <button type="submit">Submit Review</button>
+    </form>
+
+    <!-- Displaying existing reviews -->
+    <div id="reviews-display">
+        <h3>What our customers say:</h3>
+        <div class="review-item">
+            <p><strong>Ahmed (5 stars):</strong> "Kafeega aad buu u macaan yahay, adeegga sidoo kale waa wanaagsan yahay!"</p>
+        </div>
+        <div class="review-item">
+            <p><strong>Fatima (4 stars):</strong> "Waa meel aad u fiican, laakiin waxaan jeclaan lahaa in adeeggu uu noqdo mid degdeg ah."</p>
+        </div>
+        <!-- More reviews will be added here dynamically -->
+    </div>
+</div>
+
+<!-- Basic CSS -->
+<style>
+    .review-section {
+        margin: 30px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+        font-size: 24px;
+        color: #333;
+    }
+
+    #review-form {
+        margin-bottom: 20px;
+    }
+
+    #review-text {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    select {
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    button {
+        padding: 10px 20px;
+        border: none;
+        background-color: #4CAF50;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+
+    .review-item {
+        margin-top: 15px;
+        padding: 10px;
+        background-color: #e9e9e9;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .review-item p {
+        margin: 0;
+        font-size: 16px;
+    }
+</style>

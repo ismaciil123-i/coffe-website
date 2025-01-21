@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../css/style.css">
+    <!--below is the link of box icon-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+
+    <header class="header">
+        <a href="../../home pge.html" class="logo">
+            <img src="../../../images/loogada saxda ah.png" class="logo1">
+        </a>
+        <nav class="navbar">
+            <a href="../../home pge.html">HOME</a>
+            <a href="#m">COFFEE SHOPS</a>
+            <a href="../../Form.html">CONTACT US</a>
+            <a href="../../Help.html">HELP</a>
+            <a href="../../About.html">ABOUT</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+
+        <div class="cart-items-container">
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="../images/Nin Kop.jpg" alt="Coffee 1">
+                <div class="content">
+                    <h3>Somali Coffee-1</h3>
+                    <div class="price">$76.00/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="../images/nin iyo.avif" alt="Coffee 2">
+                <div class="content">
+                    <h3>Somali Coffee-2</h3>
+                    <div class="price">$10.00/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="../images/Oday kop.avif" alt="Coffee 3">
+                <div class="content">
+                    <h3>Somali Coffee-3</h3>
+                    <div class="price">$96.00/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="../images/Man Kop.avif" alt="Coffee 4">
+                <div class="content">
+                    <h3>Somali Coffee-4</h3>
+                    <div class="price">$80.00/-</div>
+                </div>
+            </div>
+            <a href="#" class="btn">Check Out</a>
+        </div>
+
+    </header><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+    <div class="navbar-li">
+        <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="Chapter1.html">Chapter 1</a></li>
+            <li><a href="Chapter2.html">Chapter 2</a></li>
+            <li><a href="Chapter3.html">Chapter 3</a></li>
+            <li><a href="Chapter4.html">Chapter 4</a></li>
+            <li><a href="Chapter5.html">Chapter 5</a></li>
+            <li><a href="Chapter6.html">Chapter 6</a></li>
+            <li><a href="Chapter7.html">Chapter 7</a></li>
+            <li><a href="Chapter8.html">Chapter 8</a></li>
+        </ul>
+    </div>
+
+    <style>
+        /* General Reset */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar-li {
+            text-align: center;
+            background-color: #2c3e50;
+            padding: 1rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-li ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .navbar-li ul li {
+            display: inline-block;
+        }
+
+        .navbar-li ul li a {
+            display: inline-block;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            background-color: #34495e;
+            color: #fff;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+            font-size: 1rem;
+        }
+
+        .navbar-li ul li a:hover {
+            background-color: #f39c12;
+            color: #2c3e50;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar-li ul {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .navbar-li ul li a {
+                width: 80%;
+                text-align: center;
+            }
+        }
+
+
+        .cha_5,
+        #cha_05,
+        #ch_4 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #f709bf;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #a6f704;
+        }
+
+        #ch05,
+        #Output {
+            text-align: center;
+            margin: 20px auto;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            padding: 10px;
+            width: 80%;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        main {
+            padding: 200px;
+            text-align: center;
+        }
+    </style>
+
+    <main>
+        <div id="ch_3">
+            <button onclick="chap3_1()">Example 1: Display Age</button>
+            <button onclick="chap3_2()">Example 2: Swapping Variables (Destructuring)</button>
+            <button onclick="chap3_3()">Example 3: Swapping Variables (Arithmetic)</button>
+            <button onclick="chap3_4()">Example 4: If Statement</button>
+            <button onclick="chap3_5()">Example 5: If-Else Statement</button>
+            <button onclick="chap3_6()">Example 6: Nested If Statement</button>
+            <button onclick="chap3_7()">Example 7: Switch Statement</button>
+            <button onclick="chap3_8()">Example 8: For Loop</button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+
+    <br><br><br><br><br><br>
+    <footer class="footer">
+        <div class="container">
+            <!-- About Section -->
+            <div class="footer-about">
+                <h3>Coffee Bliss</h3>
+                <p>Discover the finest coffee blends and enjoy a unique experience at Coffee Bliss. Your perfect cup is
+                    just a sip away!</p>
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media Section -->
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin-in"></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 Coffee Bliss. All Rights Reserved. Designed with ❤️ by Coffee Enthusiasts.</p>
+        </div>
+    </footer>
+
+
+    <script src="../../../java/main.js"></script>
+
+</body>
+
+</html>
